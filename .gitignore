@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/Lesson11/.vs/Lesson11
+/Lesson11/Lesson11/x64/Debug
+/Lesson11/x64/Debug
