@@ -1,10 +1,16 @@
 #include <iostream>
 
+struct Bag
+{
+    std::string books[10]{};
+};
+
 struct Student
 {
-    int Age;
-    int Height;
-    std::string Name;
+    int Age = 0;
+    int Height = 0;
+    std::string Name = 0;
+    Bag* myBag = nullptr;
 
     void GetInfo()
     {
