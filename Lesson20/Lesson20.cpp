@@ -1,6 +1,6 @@
 #include <iostream>
 
-enum Result
+enum class Result
 {
     SUCCESS,
     FAIL,
@@ -8,16 +8,33 @@ enum Result
     ERROR_READ
 };
 
+enum class Another
+{
+    WORK,
+    SUCCESS,
+};
+
 Result DoWork()
 {
-    return SUCCESS;
+    return Result::SUCCESS;
 }
+
+enum Alphabet
+{
+    A,
+    B,
+    C
+};
 
 int main()
 {
+    std::cout << A;
+
     Result workResult = DoWork();
-    if(workResult == SUCCESS) {
+    if(workResult == Result::SUCCESS) {
 
     }
+
+    Another anotherRes = Another::WORK;
 }
 
