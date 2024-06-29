@@ -28,9 +28,9 @@ enum Alphabet
 
 int main()
 {
-    std::cout << A;
-
     Result workResult = DoWork();
+    std::cout << static_cast<int>(workResult);
+
     if(workResult == Result::SUCCESS) {
 
     }
